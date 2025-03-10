@@ -13,3 +13,5 @@ openpyxl
 azure-storage-blob
 flask
 flask_cors
+fastapi
+uvicorn
