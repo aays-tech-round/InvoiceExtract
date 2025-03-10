@@ -50,7 +50,7 @@ from flask_cors import CORS
 # if __name__ == '__main__':
 #     app.run(debug=False, port=5002)
 
-connection_string = st.secrets['connection_string']
+connection_string = os.environ['connection_string']
 input_container = "input"
 output_container = "output"
 input_blob = 'sample.txt'
@@ -79,13 +79,13 @@ input_blob = 'sample.txt'
 #     }
 #     </style>""", unsafe_allow_html=True)
 
-endpoint = st.secrets['endpoint']
-key = st.secrets['azure_key']
+endpoint = os.environ['endpoint']
+key = os.environ['azure_key']
 
 # col1, col2 = st.columns(2)
-api_key = st.secrets['openai_api_key']
-api_version = st.secrets['api_version']
-azure_endpoint = st.secrets['azure_endpoint']
+api_key = os.environ['openai_api_key']
+api_version = os.environ['api_version']
+azure_endpoint = os.environ['azure_endpoint']
 
 client = AzureOpenAI(
     api_key=api_key,
