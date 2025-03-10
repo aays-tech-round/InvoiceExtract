@@ -1,0 +1,15 @@
+PyMuPDF
+openai
+pandas
+streamlit
+pillow
+opencv-python-headless
+pytesseract
+numpy
+PyPDF2
+azure-ai-formrecognizer
+azure-core
+openpyxl
+azure-storage-blob
+flask
+flask_cors
